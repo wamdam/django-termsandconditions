@@ -6,6 +6,7 @@
 *.py[co]
 *-env
 *.env
+*.swp
 *_build
 .coverage
 .DS_Store
