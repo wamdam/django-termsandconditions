@@ -5,12 +5,6 @@
 
 {% block body_class %}{% endblock %}
 
-{% block head %}
-    <script>
-        window.print();
-    </script>
-{% endblock %}
-
 {% block header %}{% endblock %}
 
 {% block content %}
@@ -20,6 +14,14 @@
     <div>
         {{ terms.text|safe }}
     </div>
+    <script>
+        var _onl = window.onload;
+        window.onload = function(e) {
+            if (_onl) _onl(e);
+            window.print();
+        }
+    </script>
+
 {% endblock %}
 
 {% block footer %}{% endblock %}
