@@ -1,13 +1,12 @@
 {% extends "base.html" %}
 {% load i18n %}
 
-{% block headtitle %}Accept Terms and Conditions{% endblock %}
-
-{% block header %}{% endblock %}
-
 {% block content %}
     <section title="termsandconditions" data-role="content">
-        <h1>{% blocktrans %}Please Accept {{ form.initial.terms.name|safe }}{% endblocktrans %}</h1>
+        <h1>{% trans 'Terms and Conditions' %}</h1>
+        <p>
+            {% trans 'In order to proceed, you have to accept the Terms and Conditions.' %}
+        </p>
         {{ form.errors }}
         <div id="tc-terms-html">
             {{ form.initial.terms.text|safe }}
@@ -21,4 +20,3 @@
         <p><a href="{%  url 'tc_print_page' form.initial.terms.slug form.initial.terms.version_number %}" target="_blank">{% trans 'Print Terms & Conditions' %}</a></p>
     </section>
 {% endblock %}
-{% block footer %}{% endblock %}

@@ -1,33 +1,35 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Translation file for the termsandconditions package
+# License: MIT, Apache, GPL2, GPL3 - whatever you want.
+# Daniel Kraft <daniel.kraft@d9t.de>, 2014.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: 0.1.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-31 12:01+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2014-01-31 12:21+0000\n"
+"PO-Revision-Date: 2014-01-31 13:23+0100\n"
+"Last-Translator: Daniel Kraft <daniel.kraft@d9t.de>\n"
+"Language-Team: None <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: templates/termsandconditions/tc_accept_terms.html:10
-#, python-format
-msgid "Please Accept %(form.initial.terms.name|safe)s"
-msgstr "Bitte akzeptieren Sie %(form.initial.terms.name|safe)s"
+#: templates/termsandconditions/tc_accept_terms.html:6
+msgid "Terms and Conditions"
+msgstr "AGB"
 
-#: templates/termsandconditions/tc_accept_terms.html:19
+#: templates/termsandconditions/tc_accept_terms.html:8
+msgid "In order to proceed, you have to accept the Terms and Conditions."
+msgstr "Um fortzufahren, müssen Sie die AGB akzeptieren."
+
+#: templates/termsandconditions/tc_accept_terms.html:18
 msgid "Accept"
 msgstr "Akzeptieren"
 
-#: templates/termsandconditions/tc_accept_terms.html:21
+#: templates/termsandconditions/tc_accept_terms.html:20
 msgid "Print Terms & Conditions"
 msgstr "AGB drucken"
 
@@ -47,6 +49,6 @@ msgstr "Sie haben angefordert"
 msgid "Send"
 msgstr "Abschicken"
 
-#: templates/termsandconditions/tc_print_terms.html:3
+#: templates/termsandconditions/tc_print_terms.html:4
 msgid "Print Terms and Conditions"
 msgstr "AGB drucken"
