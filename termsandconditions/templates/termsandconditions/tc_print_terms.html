@@ -9,7 +9,7 @@
 
 {% block content %}
     <h1>{% trans 'Terms and Conditions' %}</h1>
-    <h3>{% blocktrans %}Version {{ terms.version_number|safe }}{% endblocktrans %}</h3>
+    <h3>{% trans 'Version' %} {{ terms.version_number|safe }}</h3>
 
     <div>
         {{ terms.text|safe }}

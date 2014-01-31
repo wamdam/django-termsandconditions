@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-31 12:27+0000\n"
+"POT-Creation-Date: 2014-01-31 13:23+0000\n"
 "PO-Revision-Date: 2014-01-31 13:23+0100\n"
 "Last-Translator: Daniel Kraft <daniel.kraft@d9t.de>\n"
 "Language-Team: None <LL@li.org>\n"
@@ -24,21 +24,20 @@ msgstr "AGB"
 
 #: templates/termsandconditions/tc_accept_terms.html:7
 #: templates/termsandconditions/tc_print_terms.html:12
-#, python-format
-msgid "Version %(terms.version_number|safe)s"
-msgstr "Version %(terms.version_number|safe)s"
+msgid "Version"
+msgstr "Version"
 
 #: templates/termsandconditions/tc_accept_terms.html:9
 msgid "In order to proceed, you have to accept the Terms and Conditions."
 msgstr "Um fortzufahren, müssen Sie die AGB akzeptieren."
 
-#: templates/termsandconditions/tc_accept_terms.html:19
-msgid "Accept"
-msgstr "Akzeptieren"
-
-#: templates/termsandconditions/tc_accept_terms.html:21
+#: templates/termsandconditions/tc_accept_terms.html:15
 msgid "Print Terms & Conditions"
 msgstr "AGB drucken"
+
+#: templates/termsandconditions/tc_accept_terms.html:21
+msgid "Accept"
+msgstr "Akzeptieren"
 
 #: templates/termsandconditions/tc_email_terms_form.html:4
 msgid "Email Terms and Conditions"
@@ -59,3 +58,4 @@ msgstr "Abschicken"
 #: templates/termsandconditions/tc_print_terms.html:4
 msgid "Print Terms and Conditions"
 msgstr "AGB drucken"
+

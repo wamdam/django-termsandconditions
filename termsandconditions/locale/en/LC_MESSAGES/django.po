@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-31 12:27+0000\n"
+"POT-Creation-Date: 2014-01-31 13:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,20 +24,19 @@ msgstr ""
 
 #: templates/termsandconditions/tc_accept_terms.html:7
 #: templates/termsandconditions/tc_print_terms.html:12
-#, python-format
-msgid "Version %(terms.version_number|safe)s"
+msgid "Version"
 msgstr ""
 
 #: templates/termsandconditions/tc_accept_terms.html:9
 msgid "In order to proceed, you have to accept the Terms and Conditions."
 msgstr ""
 
-#: templates/termsandconditions/tc_accept_terms.html:19
-msgid "Accept"
+#: templates/termsandconditions/tc_accept_terms.html:15
+msgid "Print Terms & Conditions"
 msgstr ""
 
 #: templates/termsandconditions/tc_accept_terms.html:21
-msgid "Print Terms & Conditions"
+msgid "Accept"
 msgstr ""
 
 #: templates/termsandconditions/tc_email_terms_form.html:4

@@ -2,9 +2,9 @@
 {% load i18n %}
 
 {% block content %}
-    <section title="termsandconditions" data-role="content">
+    <section class="termsandconditions" data-role="content">
         <h1>{% trans 'Terms and Conditions' %}</h1>
-        <h3>{% blocktrans %}Version {{ terms.version_number|safe }}{% endblocktrans %}</h3>
+        <h3>{% trans 'Version' %} {{ form.initial.terms.version_number }}</h3>
         <p>
             {% trans 'In order to proceed, you have to accept the Terms and Conditions.' %}
         </p>
@@ -12,12 +12,15 @@
         <div id="tc-terms-html">
             {{ form.initial.terms.text|safe }}
         </div>
+        <p><a class="print" href="{% url 'tc_print_page' form.initial.terms.slug form.initial.terms.version_number %}" target="_blank">{% trans 'Print Terms & Conditions' %}</a></p>
         <form action="{% url 'tc_accept_page' %}" method="post" id="tc-terms-form"  data-ajax="false">
             {% csrf_token %}
             {{ form.terms }}
             {{ form.returnTo }}
-            <p><input type="submit" value="{% trans 'Accept' %}" data-role="button"></p>
+            <div class="formsubmit">
+                <input class="btn btn-primary" type="submit" value="{% trans 'Accept' %}" data-role="button">
+                <a class="decline btn btn-default" href="{% url 'logout' %}">Decline</a>
+            </div>
         </form>
-        <p><a href="{%  url 'tc_print_page' form.initial.terms.slug form.initial.terms.version_number %}" target="_blank">{% trans 'Print Terms & Conditions' %}</a></p>
     </section>
 {% endblock %}
