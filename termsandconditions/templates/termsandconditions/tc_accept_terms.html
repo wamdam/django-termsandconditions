@@ -4,6 +4,7 @@
 {% block content %}
     <section title="termsandconditions" data-role="content">
         <h1>{% trans 'Terms and Conditions' %}</h1>
+        <h3>{% blocktrans %}Version {{ terms.version_number|safe }}{% endblocktrans %}</h3>
         <p>
             {% trans 'In order to proceed, you have to accept the Terms and Conditions.' %}
         </p>

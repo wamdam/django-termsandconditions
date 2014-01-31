@@ -8,8 +8,8 @@
 {% block header %}{% endblock %}
 
 {% block content %}
-    <h1>{{ terms.name|safe }}</h1>
-    <h3>Version {{ terms.version_number|safe }}</h3>
+    <h1>{% trans 'Terms and Conditions' %}</h1>
+    <h3>{% blocktrans %}Version {{ terms.version_number|safe }}{% endblocktrans %}</h3>
 
     <div>
         {{ terms.text|safe }}
