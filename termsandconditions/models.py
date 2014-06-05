@@ -6,6 +6,8 @@ from django.contrib.auth.models import User
 from django.db import models
 from django.conf import settings
 from django.http import Http404
+from django.utils.timezone import make_aware
+from django.utils.timezone import get_default_timezone
 import datetime
 import logging
 
@@ -71,7 +73,7 @@ class TermsAndConditions(models.Model):
         try:
             activeTerms = TermsAndConditions.objects.filter(
                 date_active__isnull=False,
-                date_active__lte=datetime.datetime.now(),
+                date_active__lte=make_aware(datetime.datetime.now(), get_default_timezone()),
                 slug=slug).latest('date_active')
         except TermsAndConditions.DoesNotExist:
             if slug == DEFAULT_TERMS_SLUG:
